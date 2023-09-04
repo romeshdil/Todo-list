@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Task App 2023</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
-	
-	<main>
-
-		<div class="app">
-
-			<header>
-				<h1>Your Todos</h1>
-				<button id="create">Add new todo</button>
-			</header>
-
-			<div class="todo-list" id="list">
-
-				<!-- <div class="item">
-					<input type="checkbox" />
-					<input 
-						type="text" 
-						value="Todo content goes here" 
-						disabled />
-					<div class="actions">
-						<button class="material-icons">edit</button>
-						<button class="material-icons remove-btn">remove_circle</button>
-					</div>
-				</div> -->
+<html>
+	<head>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1">
+		<title>To-Do List App</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="todo-app">
+				<h2>To-Do List <img src="E:\github\Todo app\Todo-list/icon.png"></h2>
+				<div class="row">
+					<input type="text" id="input-box" placeholder="Add your text">
+					<button onclick="addTask()">Add</button>
+				</div>
+				<ul id="list-container">
+					<!--<li class="checked">Task 1</li>
+					<li>Task 1</li>
+					<li>Task 1</li>-->
+				</ul>
 
 			</div>
 
+
 		</div>
+<script src="script.js"></script>
 
-	</main>
-
-	<script src="main.js"></script>
-</body>
+	</body>
 </html>
